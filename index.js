@@ -11,8 +11,6 @@ app.use('/', function ( req, res, next) {
     res.header("Access-Control-Allow-Methods","GET, POST, OPTIONS, PUT, DELETE");    
     next();
 });
-let loginRoute = require('./perawat/loginRoute');
-app.use('/api',loginRoute);
 mong.connect('mongodb://doni:h4g4t4doniozan@ds113835.mlab.com:13835/dbpelatihan');
 app.listen(process.env.PORT || 8889, function() {
   console.log('Node app is running on port', app.get('port'));
