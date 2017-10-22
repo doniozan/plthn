@@ -1,6 +1,6 @@
 let express = require('express');
 let route = express.Router();
-let angkatanAktualController = require('./angkatanaktualController.js');
+let angkatanAktualController = require('./angkatanAktualController.js');
 route.get('/angkatanaktual',function(req,res){
     angkatanAktualController.getAngkatanAktual(function(err,respon){
         if(err){
