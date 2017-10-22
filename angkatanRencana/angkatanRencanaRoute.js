@@ -1,6 +1,6 @@
 let express = require('express');
 let route = express.Router();
-let angkatanRencanaController = require('./angkatanrencanaController.js');
+let angkatanRencanaController = require('./angkatanRencanaController.js');
 route.get('/angkatanrencana',function(req,res){
     angkatanRencanaController.getAngkatanRencana(function(err,respon){
         if(err){
