@@ -13,16 +13,6 @@ app.use('/', function ( req, res, next) {
 });
 let loginRoute = require('./perawat/loginRoute');
 app.use('/api',loginRoute);
-let pasienRoute = require('./pasien/pasienRoute');
-app.use('/api',pasienRoute);
-let userPasienRoute = require('./userPasien/userPasienRoute');
-app.use('/api',userPasienRoute);
-let satuanHargaDokterRoute = require('./satuanHargaDokter/satuanHargaDokterRoute');
-app.use('/api',satuanHargaDokterRoute);
-let perawatRoute = require('./perawat/perawatRoute');
-app.use('/api',perawatRoute);
-let userPetugasRoute = require('./userPetugas/userPetugasRoute');
-app.use('/api',userPetugasRoute);
 mong.connect('mongodb://doni:h4g4t4doniozan@ds113835.mlab.com:13835/dbpelatihan');
 app.listen(process.env.PORT || 8889, function() {
   console.log('Node app is running on port', app.get('port'));
