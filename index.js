@@ -17,6 +17,8 @@ let pesertaRoute = require('./peserta/pesertaRoute');
 app.use('/api',pesertaRoute);
 let angkatanRencanaRoute = require('./angkatanRencana/angkatanRencanaRoute');
 app.use('/api',angkatanRencanaRoute);
+let angkatanAktualRoute = require('./angkatanAktual/angkatanAktualRoute');
+app.use('/api',angkatanAktualRoute);
 mong.connect('mongodb://doni:h4g4t4doniozan@ds113835.mlab.com:13835/dbpelatihan');
 app.listen(process.env.PORT || 8889, function() {
   console.log('Node app is running on port', app.get('port'));
